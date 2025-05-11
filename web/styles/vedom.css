@@ -1,0 +1,168 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+  }
+  
+  .header {
+    border-width: 0;
+    border-bottom-width: 2px;
+    border-bottom-style:groove;
+    border-bottom-color: rgb(223, 223, 223);
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;  /* Distribute items horizontally */
+      align-items: center;   /* Align items vertically */
+  }
+  
+  /* New styles for header left and right sections */
+  .header-left, .header-right {
+      display: flex;
+      align-items: center;
+  }
+  
+  .header-right {
+      justify-content: flex-end; /* Align user info to the right */
+      flex-grow: 1; /* Allow user info to take up remaining space */
+      text-align: right;
+  }
+  
+  .header .user-info {
+      text-align: right;  /* Align user info to the right */
+  }
+  
+  .header a{
+    text-decoration: none;
+    color: #606060;
+  }
+
+  .header a:hover {
+    text-decoration: none;
+  }
+
+  .profile-button {
+    border-width: 1px;
+    border-style: ridge;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+    padding: 10px 20px;
+    background-color: whitesmoke; /* Example gray color */
+    transition: background-color 1s ease;
+  }
+  
+  .profile-button:hover {
+    color: #454545;
+    background-color: #8ca9f2; /* Darker gray on hover */
+  }
+  
+
+  .header-left a{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 10px 20px;
+  }
+
+  .symbol{
+    margin-left: 10px;
+  }
+
+  /* Style for "На главную" button */
+  .home-button {
+     
+    padding: 12px 18px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 550;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+  
+  .container {
+      width: 80%;
+      max-width: 960px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #444a82;
+  }
+  
+  .vedom-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+  }
+  
+  .vedom-table th,
+  .vedom-table td {
+      padding: 12px 15px;
+      text-align: center;
+      border: 1px solid #ddd;
+  }
+  
+  .vedom-table thead th {
+      background-color: #606060;
+      color: whitesmoke;
+      font-weight: bold;
+  }
+  
+  .vedom-table tbody td {
+      background-color: rgba(222, 222, 222, 0.87);
+  }
+  
+  .buttons {
+    margin-top: 30px;
+      margin-left:1px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .buttons form {
+      display: inline-block;
+  }
+  
+  .buttons button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+      margin-right: 10px;
+  }
+  
+  .clear-button {
+    background-color: #25357cca;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+.back-button {
+    background-color: #686868;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+.clear-button:hover {
+    background-color: #3e509d;
+}
+
+.back-button:hover {
+    background-color: #585858;
+}
+  /* Styles for forms */

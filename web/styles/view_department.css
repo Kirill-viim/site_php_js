@@ -1,0 +1,189 @@
+        /* Общие стили для страницы */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+      
+
+        .header-left {
+            text-align: left;
+        }
+
+        .header-right {
+            text-align: right;
+        }
+
+        .header-left a{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            padding: 10px 20px;
+          }
+
+          .header a{
+            text-decoration: none;
+            color: #606060;
+          }
+        
+          .header a:hover {
+            text-decoration: none;
+          }
+
+           /* Specific styling for the subscribe button */
+.subscribe-button {
+    border-width: 1px;
+    border-style: ridge;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+    padding: 10px 20px;
+    background-color: whitesmoke; /* Example green color */
+    margin-right: 10px; /* Add spacing between the buttons */
+    transition: background-color 1s ease;
+  }
+  
+  .subscribe-button:hover {
+    color: #454545;
+    background-color: #8ca9f2; /* Darker gray on hover */
+  }
+  
+  /* Specific styling for the profile button */
+  .profile-button {
+    border-width: 1px;
+    border-style: ridge;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1em;
+    padding: 10px 20px;
+    background-color: whitesmoke; /* Example gray color */
+    transition: background-color 1s ease;
+  }
+  
+  .profile-button:hover {
+    color: #454545;
+    background-color: #8ca9f2; /* Darker gray on hover */
+  }
+        
+          .symbol{
+            margin-left: 10px;
+          }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff; /* White container */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header {
+            border-width: 0;
+            border-bottom-width: 2px;
+            border-bottom-style:groove;
+            border-bottom-color: rgb(223, 223, 223);
+              color: #ffffff; /* Darkest Teal */
+              padding: 20px 20px;
+              
+              margin-bottom: 20px;
+              display: flex;
+              justify-content: space-between;  /* Distribute items horizontally */
+              align-items: center;   /* Align items vertically */
+          }
+        
+        /* New styles for header left and right sections */
+        .header-left, .header-right {
+            display: flex;
+            align-items: center;
+        }
+        
+        .header-right {
+            justify-content: flex-end; /* Align user info to the right */
+            flex-grow: 1; /* Allow user info to take up remaining space */
+            text-align: right;
+        }
+        
+        .header .user-info {
+            text-align: right;  /* Align user info to the right */
+        }
+ 
+  
+
+  h1 {
+      color: #444a82; /* Darker Teal */
+      margin-top: 40px;  /* Reset top margin */
+      margin-bottom: 10px; /* Add some space below the heading */
+      display: flex;            /* Add flex to student items */ 
+      text-align: left;  
+      align-items: center;
+  }
+
+        h2 {
+            margin-top: 30px;
+            font-size: 18px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+        }
+
+        .teachers-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .teachers-list li {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .teachers-list li:last-child {
+            border-bottom: none;
+        }
+
+        .teacher-item {
+            margin-left: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .student-name {
+            display: block;
+            color: #333;
+        }
+
+        .education-level {
+            font-style: italic;
+            color: #777;
+        }
+
+        .error-message {
+            color: red;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+       
+
+         /* New Styles */
+  .department-title-and-count {
+      margin-left: 20px; /* Add left margin */
+    }
+    .teacher-count {
+      font-size: 0.7em; /* Smaller font size */
+      color: #555;       /* A bit darker color */
+      margin-left: 10px;
+}
+
+/* Стили для блока с описанием */
+.description {
+      margin-top: 20px;
+      margin-left: 20px;
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #f9f9f9;
+  }

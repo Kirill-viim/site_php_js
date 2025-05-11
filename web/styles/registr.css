@@ -1,0 +1,107 @@
+/* Общие стили */
+body {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Задайте желаемую ширину */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Стили формы */
+.registration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Важно для правильного расчета ширины */
+}
+
+button[type="submit"] {
+    background-color: #25357c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e509d;
+}
+
+/* Стили для ошибок */
+.error-input {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    display: block; /* Важно для предотвращения смещения */
+    margin-top: 3px;
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* ... ваши существующие стили ... */
+
+/* Стили для успешного сообщения */
+.success-dialog {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    position: fixed;   /* Fixed position for dialog */
+    top: 20px;       /* Position from top */
+    left: 50%;          /* Center horizontally */
+    transform: translateX(-50%);  /* Adjust for centering */
+    z-index: 1000;     /* Ensure it's on top */
+    opacity: 0;          /* Initially hidden */
+    transition: opacity 0.5s ease-in-out;  /* Fade-in/out */
+    pointer-events: none; /* Make it non-clickable when hidden */
+}
+
+.success-dialog.show {
+    opacity: 1;      /* Show the dialog */
+    pointer-events: auto; /* Make it clickable when visible */
+}

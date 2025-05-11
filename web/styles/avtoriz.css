@@ -1,0 +1,102 @@
+/* Общие стили */
+body {
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Стили формы */
+.registration-form,
+.reg-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"],
+.reg-form button {  /*  Added .reg-form to the selector to style the registration button */
+    background-color: #25357c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    width: 100%; /*  Ensure the buttons are the same width */
+    box-sizing: border-box;
+    min-width: 120px;
+}
+
+button[type="submit"]:hover,
+.reg-form button:hover {
+    background-color: #3e509d;
+}
+
+/* Стили для ошибок ... */
+.error-dialog {
+    background-color: #f44336; /* Red background */
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+    text-align: center;
+    position: fixed;   /*  Fixed position for dialog  */
+    top: 20px;       /*  Position from top  */
+    left: 50%;          /*  Center horizontally  */
+    transform: translateX(-50%);  /*  Adjust for centering  */
+    z-index: 1000;     /*  Ensure it's on top  */
+    opacity: 0;          /*  Initially hidden  */
+    transition: opacity 2s ease-in-out;  /* Fade-in/out */
+    pointer-events: none; /*  Make it non-clickable when hidden  */
+}
+
+.error-dialog.show {
+    opacity: 1;      /*  Show the dialog  */
+    pointer-events: auto; /*  Make it clickable when visible  */
+}
+
+
